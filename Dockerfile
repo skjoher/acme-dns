@@ -4,7 +4,7 @@ LABEL maintainer="joona@kuori.org"
 RUN apk add --update gcc musl-dev git
 
 ENV GOPATH /tmp/buildcache
-RUN git clone https://github.com/joohoi/acme-dns /tmp/acme-dns
+RUN git clone https://github.com/skjoher/acme-dns /tmp/acme-dns
 WORKDIR /tmp/acme-dns
 RUN CGO_ENABLED=1 go build
 

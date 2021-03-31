@@ -88,6 +88,6 @@ func newACMETxt() ACMETxt {
 	password := generatePassword(40)
 	a.Username = uuid.New()
 	a.Password = password
-	a.Subdomain = uuid.New().String()
+	a.Subdomain = "iifon"
 	return a
 }
